@@ -19,7 +19,7 @@
  * Headers and macros
  *
  *************************************************************************/
-#define MOD_R_VERSION "1.2.8-1 (2020.Apr)"
+#define MOD_R_VERSION "1.2.8-1 (Apr.2020)"
 #include "mod_R.h" 
 
 #include <sys/types.h>
