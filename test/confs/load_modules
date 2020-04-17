@@ -1,0 +1,3 @@
+LoadModule dir_module /usr/modules/mod_dir.so
+LoadModule log_config_module /usr/modules/mod_log_config.so
+LoadModule mime_module /usr/modules/mod_mime.so

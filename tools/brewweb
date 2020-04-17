@@ -1,0 +1,14 @@
+#!/usr/bin/env Rscript
+library(brew)
+library(Rook)
+
+h <- file.path(getwd(),'website')
+t <- file.path(h,'templates')
+
+setwd(t)
+for (p in list.files(pattern='\\.html')){
+	inputfile <- file.path(t,p)
+	outputfile <- file.path(h,p)
+	cat(inputfile,'\n')
+	brew(inputfile,outputfile,tplParser=Utils$escape_html)
+}
