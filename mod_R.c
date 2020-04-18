@@ -19,7 +19,7 @@
  * Headers and macros
  *
  *************************************************************************/
-#define MOD_R_VERSION "1.2.8-1 (Apr.2020)"
+#define MOD_R_VERSION "1.2.8-1 (2020.Apr)"
 #include "mod_R.h" 
 
 #include <sys/types.h>
@@ -1600,7 +1600,7 @@ static int RApacheInfo()
    EXEC("zebra('R.version',R.version)"); PUTS("<br/><hr/>");
    EXEC("zebra('search()',search())"); PUTS("<br/><hr/>");
    EXEC("zebra('.libPaths()',.libPaths())"); PUTS("<br/><hr/>");
-   EXEC("zebra('options()',unlist(options()))"); PUTS("<br/><hr/>");
+   EXEC("zebra('options()',options())"); PUTS("<br/><hr/>");
    EXEC("zebra('Sys.getenv()',as.list(Sys.getenv()))"); PUTS("<br/><hr/>");
    EXEC("zebra('Sys.info()',as.list(Sys.info()))"); PUTS("<br/><hr/>");
    EXEC("zebra('.Machine',.Machine)"); PUTS("<br/><hr/>");
